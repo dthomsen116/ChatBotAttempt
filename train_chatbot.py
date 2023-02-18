@@ -16,7 +16,7 @@ words=[]
 classes = []
 documents = []
 ignore_words = ['?', '!']
-data_file = open('AI/intents.json')
+data_file = open('intents.json')
 intents = json.loads(data_file.read())
 
 
@@ -46,8 +46,8 @@ print (len(classes), "classes", classes)
 print (len(words), "unique lemmatized words", words)
 
 
-pickle.dump(words,open('AI\words.pkl','wb'))
-pickle.dump(classes,open('AI\classes.pkl','wb'))
+pickle.dump(words,open('words.pkl','wb'))
+pickle.dump(classes,open('classes.pkl','wb'))
 
 # initializing training data
 training = []
